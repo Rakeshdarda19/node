@@ -9,3 +9,7 @@ app.listen(3000, () => {
 app.get("/home", (req,res) => {
  res.send("<h1>Hello Browser</h1>")
 })
+
+app.post("/home", (req,res) => {
+    res.send("Hello request")
+   })
