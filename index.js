@@ -1,3 +1,4 @@
+const { RadioButtonCheckedSharp } = require("@material-ui/icons")
 const express  = require("express")
 const app = express()
 const port = 3000
@@ -13,3 +14,10 @@ app.get("/home", (req,res) => {
 app.post("/home", (req,res) => {
     res.send("Hello request")
    })
+
+   app.put("/home", (req,res) => {
+    res.send({
+        name:"Rakesh",
+        age: 23
+    })
+   })   
